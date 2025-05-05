@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="/index">Home</a>
+            <a href="/add-product">Tambah Produk</a>
+            <a href="/cart" class="cart-link">
+                Keranjang <span id="cartCount" class="cart-count">0</span>
+            </a>
+            <a href="/orders">Riwayat Pesanan</a>
+            <button id="logoutBtn" class="btn-logout">Logout</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="products-section">
+            <h2>Daftar Produk</h2>
+            <div id="productsList" class="products-grid"></div>
+        </section>
+    </main>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

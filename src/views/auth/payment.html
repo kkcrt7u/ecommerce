@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Pembayaran</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="/orders">Kembali ke Pesanan</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="payment-container">
+            <div class="payment-form">
+                <h2>Detail Kartu Kredit</h2>
+                <form id="paymentForm" class="credit-card-form">
+                    <div class="form-group">
+                        <label for="cardNumber">Nomor Kartu Kredit</label>
+                        <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required
+                            pattern="[0-9]{16}" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="3" required
+                            pattern="[0-9]{3}" placeholder="123">
+                        <small>3 digit di belakang kartu</small>
+                    </div>
+                    <button type="submit" class="btn-primary">Proses Pembayaran</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/payment.js"></script>
+</body>
+</html>

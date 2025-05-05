@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Checkout</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="/index">Dashboard</a>
+            <a href="/cart">Kembali ke Keranjang</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="checkout-container">
+            <div class="order-summary">
+                <h2>Ringkasan Pesanan</h2>
+                <div id="orderItems" class="order-items"></div>
+                <div class="order-total">
+                    <h3>Total: <span id="orderTotal">Rp 0</span></h3>
+                </div>
+            </div>
+
+            <div class="shipping-form">
+                <h2>Informasi Pengiriman</h2>
+                <form id="checkoutForm" class="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Alamat Lengkap</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Proses Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/checkout.js"></script>
+</body>
+</html>
